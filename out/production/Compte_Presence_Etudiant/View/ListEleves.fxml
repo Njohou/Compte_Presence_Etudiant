@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ListEleves">
+   <children>
+      <TableView layoutX="102.0" prefHeight="400.0" prefWidth="497.0">
+        <columns>
+          <TableColumn prefWidth="78.0" text="ID" />
+          <TableColumn prefWidth="115.0" text="NOM" />
+            <TableColumn prefWidth="113.0" text="PRENOM" />
+            <TableColumn prefWidth="87.0" text="SEXE" />
+            <TableColumn prefWidth="103.0" text="TELEPHONE" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="187.0" mnemonicParsing="false" text="RETOUR" />
+   </children>
+</AnchorPane>

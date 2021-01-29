@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="457.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreerEleve">
+   <children>
+      <Label layoutX="150.0" layoutY="47.0" prefHeight="29.0" prefWidth="153.0" text="CREER ETUDIANT">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="126.0" prefHeight="29.0" prefWidth="101.0" text="NOM" />
+      <Label layoutX="78.0" layoutY="186.0" prefHeight="29.0" prefWidth="101.0" text="PRENOM" />
+      <Label layoutX="78.0" layoutY="241.0" prefHeight="29.0" prefWidth="101.0" text="SEXE" />
+      <Label layoutX="78.0" layoutY="301.0" prefHeight="29.0" prefWidth="101.0" text="TELEPHONE" />
+      <TextField layoutX="179.0" layoutY="128.0" />
+      <TextField layoutX="179.0" layoutY="188.0" />
+      <ComboBox layoutX="179.0" layoutY="243.0" prefHeight="26.0" prefWidth="171.0" />
+      <TextField layoutX="179.0" layoutY="301.0" />
+      <Button layoutX="122.0" layoutY="378.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" text="CREER" />
+      <Button layoutX="270.0" layoutY="378.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" text="FERMER" />
+   </children>
+</AnchorPane>

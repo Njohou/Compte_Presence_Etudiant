@@ -7,15 +7,15 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class CreateSemestre implements Initializable {
+public class CreateHoraire implements Initializable {
 
     @FXML
-    public void CreateSemestre() throws IOException {
+    private void CreateHoraire() throws IOException {
 
     }
 
     @FXML
-    public void CloseSemestre() throws IOException {
+    private void CloseHoraire() throws IOException {
 
     }
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="457.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateSemestre">
+   <children>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="38.0" prefHeight="29.0" prefWidth="271.0" text="CRÉER SEMESTRE" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="intituleSemestre" layoutX="175.0" layoutY="138.0" prefHeight="25.0" prefWidth="186.0" />
+      <Label layoutX="71.0" layoutY="141.0" text="Intitulé">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="249.0" text="Année">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="anneeSemestre" layoutX="175.0" layoutY="246.0" prefHeight="25.0" prefWidth="186.0" />
+      <Button layoutX="102.0" layoutY="362.0" mnemonicParsing="false" onAction="#CreateSemestre" prefHeight="26.0" prefWidth="73.0" text="CREER" />
+      <Button layoutX="289.0" layoutY="362.0" mnemonicParsing="false" onAction="#CloseSemestre" prefHeight="26.0" prefWidth="73.0" text="FERMER" />
+   </children>
+</AnchorPane>

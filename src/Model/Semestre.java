@@ -3,9 +3,9 @@ package Model;
 public class Semestre {
     private int idSemestre;
     private String intitule;
-    private String annee;
+    private int annee;
 
-    public Semestre(int idSemestre, String intitule, String annee) {
+    public Semestre(int idSemestre, String intitule, int annee) {
         this.idSemestre = idSemestre;
         this.intitule = intitule;
         this.annee = annee;
@@ -30,11 +30,11 @@ public class Semestre {
         this.intitule = intitule;
     }
 
-    public String getAnnee() {
+    public int getAnnee() {
         return annee;
     }
 
-    public void setAnnee(String annee) {
+    public void setAnnee(int annee) {
         this.annee = annee;
     }
 }

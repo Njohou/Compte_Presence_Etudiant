@@ -1,0 +1,34 @@
+CREATE DATABASE controle-horaire;
+
+CREATE TABLE Etudiant (
+    idEtudiant SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL,
+    prenom VARCHAR(255) NOT NULL,
+    sexe CHAR(1) NOT NULL CHECK (sexe IN('M', 'F')),
+    telephone BIGINT NOT NULL
+)ENGINE=INNODB;
+
+CREATE TABLE Semestre (
+    idSemestre SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    intitule VARCHAR(255) NOT NULL CHECK(intitule IN ('semestre 1', 'semestre 2')),
+    annee TINYINT NOT NULL
+)ENGINE=INNODB;
+
+CREATE TABLE Cours (
+    idCours SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    idSemestre SMALLINT NOT NULL,
+    nomCours VARCHAR(255) NOT NULL,
+    FOREIGN KEY (idSemestre) REFERENCES Semestre(idSemestre)
+    ON DELETE CASCADE ON UPDATE CASCADE
+)ENGINE=INNODB;
+
+CREATE TABLE Horaire (
+    idCours SMALLINT NOT NULL,
+    idEtudiant SMALLINT NOT NULL,
+    idHoraire SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    types VARCHAR(255) NOT NULL CHECK(types IN ('En retard', 'Absent(e)', 'Présent(e)')),
+    dateRetard VARCHAR(255) NOT NULL,
+    FOREIGN KEY (idCours) REFERENCES Cours(idCours),
+    FOREIGN KEY (idEtudiant) REFERENCES Etudiant(idEtudiant)
+    ON DELETE CASCADE ON UPDATE CASCADE
+)ENGINE=INNODB;

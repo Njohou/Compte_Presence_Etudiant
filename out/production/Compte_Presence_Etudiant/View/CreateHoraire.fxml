@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="457.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateHoraire">
    <children>
       <Label layoutX="165.0" layoutY="40.0" text="CREER UN MOTIF">
@@ -37,9 +36,9 @@
       </Label>
       <ComboBox fx:id="CoursHoraire" layoutX="182.0" layoutY="304.0" prefHeight="25.0" prefWidth="180.0" />
       <ComboBox fx:id="NomEtudiant" layoutX="184.0" layoutY="236.0" prefHeight="25.0" prefWidth="180.0" />
-      <DatePicker fx:id="dateHoraire" layoutX="177.0" layoutY="167.0" prefHeight="25.0" prefWidth="180.0" />
+      <DatePicker fx:id="dateHoraire" layoutX="184.0" layoutY="167.0" prefHeight="25.0" prefWidth="180.0" />
       <ComboBox fx:id="typeHoraire" layoutX="182.0" layoutY="101.0" prefHeight="25.0" prefWidth="180.0" />
       <Button layoutX="107.0" layoutY="388.0" mnemonicParsing="false" onAction="#CreateHoraire" prefHeight="25.0" prefWidth="72.0" text="CREER" />
-      <Button layoutX="274.0" layoutY="388.0" mnemonicParsing="false" onAction="#CloseHoraire" prefHeight="23.0" prefWidth="76.0" text="FERMER" />
+      <Button fx:id="Fermer" layoutX="274.0" layoutY="388.0" mnemonicParsing="false" onAction="#CloseHoraire" prefHeight="23.0" prefWidth="76.0" text="FERMER" />
    </children>
 </AnchorPane>

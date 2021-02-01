@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Controller.ListSemestre"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ListSemestre">
+   <children>
+      <TableView fx:id="tableSemestre" prefHeight="400.0" prefWidth="611.0">
+        <columns>
+          <TableColumn fx:id="idSemestre" prefWidth="128.0" text="Id" />
+          <TableColumn fx:id="labelSemestre" prefWidth="321.0" text="Intitulé" />
+            <TableColumn fx:id="anneeSemestre" prefWidth="161.0" text="Année" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>

@@ -8,9 +8,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="547.0" maxWidth="939.0" minHeight="547.0" minWidth="939.0" prefHeight="547.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficheHoraire">
+<AnchorPane maxHeight="547.0" maxWidth="1198.0" minHeight="547.0" minWidth="939.0" prefHeight="547.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficheHoraire">
    <children>
-      <MenuBar prefHeight="28.0" prefWidth="939.0">
+      <MenuBar layoutY="-2.0" prefHeight="29.0" prefWidth="1198.0">
         <menus>
           <Menu mnemonicParsing="false" text="Semestre">
             <items>
@@ -35,18 +35,19 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TableView layoutX="187.0" layoutY="27.0" prefHeight="520.0" prefWidth="752.0">
+      <TableView fx:id="tableHoraire" layoutX="187.0" layoutY="27.0" prefHeight="520.0" prefWidth="1012.0">
         <columns>
           <TableColumn fx:id="idHoraire" prefWidth="52.0" text="Id" />
-          <TableColumn fx:id="nomEtudiant" prefWidth="132.0" text="Nom" />
-            <TableColumn fx:id="prenomEtudiant" prefWidth="123.0" text="Prénom" />
-            <TableColumn fx:id="dateCours" prefWidth="143.0" text="Date du cours" />
-            <TableColumn fx:id="nomCours" prefWidth="165.0" text="Cours" />
-            <TableColumn fx:id="typeHoraire" prefWidth="136.0" text="Type" />
+          <TableColumn fx:id="nomEtudiant" prefWidth="127.0" text="Nom" />
+            <TableColumn fx:id="prenomEtudiant" prefWidth="117.0" text="Prénom" />
+            <TableColumn fx:id="dateCours" prefWidth="140.0" text="Date du cours" />
+            <TableColumn fx:id="nomCours" prefWidth="140.0" text="Cours" />
+            <TableColumn fx:id="semestreHoraire" prefWidth="136.0" text="Semestre" />
+            <TableColumn fx:id="anneeHoraire" prefWidth="121.0" text="Année" />
+            <TableColumn fx:id="typeHoraire" prefWidth="178.0" text="Type" />
         </columns>
       </TableView>
-      <Button layoutX="31.0" layoutY="127.0" mnemonicParsing="false" onAction="#OpenCreateMethod" prefHeight="48.0" prefWidth="122.0" text="Créer état" />
-      <Button layoutX="31.0" layoutY="250.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="122.0" text="Exporter données" />
-      <Button layoutX="31.0" layoutY="377.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="122.0" text="Importer données" />
+      <Button layoutX="31.0" layoutY="181.0" mnemonicParsing="false" onAction="#OpenCreateMethod" prefHeight="48.0" prefWidth="122.0" text="Créer état" />
+      <Button layoutX="31.0" layoutY="353.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="122.0" text="Exporter données" />
    </children>
 </AnchorPane>

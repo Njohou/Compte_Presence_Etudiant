@@ -7,9 +7,9 @@ public class Horaire {
     private int idEtudiant;
     private int idHoraire;
     private String type;
-    private Date dateCours;
+    private String dateCours;
 
-    public Horaire(int idCours, int idEtudiant, int idHoraire, String type, Date dateCours) {
+    public Horaire(int idCours, int idEtudiant, int idHoraire, String type, String dateCours) {
         this.idCours = idCours;
         this.idEtudiant = idEtudiant;
         this.idHoraire = idHoraire;
@@ -52,11 +52,11 @@ public class Horaire {
         this.type = type;
     }
 
-    public Date getDateCours() {
+    public String getDateCours() {
         return dateCours;
     }
 
-    public void setDateCours(Date dateCours) {
+    public void setDateCours(String dateCours) {
         this.dateCours = dateCours;
     }
 }

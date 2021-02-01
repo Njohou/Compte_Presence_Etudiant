@@ -5,7 +5,7 @@ CREATE TABLE Etudiant (
     nom VARCHAR(255) NOT NULL,
     prenom VARCHAR(255) NOT NULL,
     sexe CHAR(1) NOT NULL CHECK (sexe IN('M', 'F')),
-    telephone BIGINT NOT NULL
+    telephone BIGINT UNIQUE NOT NULL
 )ENGINE=INNODB;
 
 CREATE TABLE Semestre (

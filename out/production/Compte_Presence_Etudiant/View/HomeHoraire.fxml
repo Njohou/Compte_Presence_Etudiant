@@ -37,12 +37,12 @@
       </MenuBar>
       <TableView layoutX="187.0" layoutY="27.0" prefHeight="520.0" prefWidth="752.0">
         <columns>
-          <TableColumn prefWidth="52.0" text="id" />
-          <TableColumn prefWidth="132.0" text="Nom" />
-            <TableColumn prefWidth="123.0" text="Prénom" />
-            <TableColumn prefWidth="143.0" text="Date du cours" />
-            <TableColumn prefWidth="165.0" text="Cours" />
-            <TableColumn prefWidth="136.0" text="Type" />
+          <TableColumn fx:id="idHoraire" prefWidth="52.0" text="Id" />
+          <TableColumn fx:id="nomEtudiant" prefWidth="132.0" text="Nom" />
+            <TableColumn fx:id="prenomEtudiant" prefWidth="123.0" text="Prénom" />
+            <TableColumn fx:id="dateCours" prefWidth="143.0" text="Date du cours" />
+            <TableColumn fx:id="nomCours" prefWidth="165.0" text="Cours" />
+            <TableColumn fx:id="typeHoraire" prefWidth="136.0" text="Type" />
         </columns>
       </TableView>
       <Button layoutX="31.0" layoutY="127.0" mnemonicParsing="false" onAction="#OpenCreateMethod" prefHeight="48.0" prefWidth="122.0" text="Créer état" />

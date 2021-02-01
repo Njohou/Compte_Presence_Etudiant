@@ -5,13 +5,13 @@ CREATE TABLE Etudiant (
     nom VARCHAR(255) NOT NULL,
     prenom VARCHAR(255) NOT NULL,
     sexe CHAR(1) NOT NULL CHECK (sexe IN('M', 'F')),
-    telephone BIGINT NOT NULL
+    telephone BIGINT UNIQUE NOT NULL
 )ENGINE=INNODB;
 
 CREATE TABLE Semestre (
     idSemestre SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     intitule VARCHAR(255) NOT NULL CHECK(intitule IN ('semestre 1', 'semestre 2')),
-    annee TINYINT NOT NULL
+    annee SMALLINT(4) NOT NULL
 )ENGINE=INNODB;
 
 CREATE TABLE Cours (

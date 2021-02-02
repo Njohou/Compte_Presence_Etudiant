@@ -39,7 +39,7 @@ public class AfficheHoraire implements Initializable {
     @FXML
     public void GotoShowSemestre() throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../View/ListSemestre.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View/ListSemestre.fxml"));
         //stage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -50,7 +50,7 @@ public class AfficheHoraire implements Initializable {
     @FXML
     public void GotoCreateSemestre() throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../View/CreateSemestre.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View/CreateSemestre.fxml"));
         //stage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -66,7 +66,7 @@ public class AfficheHoraire implements Initializable {
     @FXML
     public void GotoShowCours() throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../View/ListCours.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View/ListCours.fxml"));
         //stage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -77,7 +77,7 @@ public class AfficheHoraire implements Initializable {
     @FXML
     public void GotoCreateCours() throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../View/CreateCours.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View/CreateCours.fxml"));
         //stage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -93,7 +93,7 @@ public class AfficheHoraire implements Initializable {
     @FXML
     public void GotoShowEtudiant() throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../View/ListEleves.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View/ListEleves.fxml"));
         //stage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -104,7 +104,7 @@ public class AfficheHoraire implements Initializable {
     @FXML
     public void GotoCreateEtudiant() throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../View/CreerEleve.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View/CreerEleve.fxml"));
         //stage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -122,7 +122,7 @@ public class AfficheHoraire implements Initializable {
         try {
             Stage stage = new Stage();
             ((Node)event.getSource()).getScene().getWindow().hide(); // permet de masquer l' interface d'affichageEmploye
-            Parent root = FXMLLoader.load(getClass().getResource("../View/CreateHoraire.fxml"));
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View/CreateHoraire.fxml"));
             //stage.initStyle(StageStyle.UNDECORATED);
             Scene scene = new Scene(root);
             stage.setScene(scene);

@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -172,7 +173,7 @@ public class AfficheHoraire implements Initializable {
         }catch (Exception e) {
             e.printStackTrace();
         }
-
+        /** Insertion des différentes données recupérées en BDD dans les différentes colonnes du tableau **/
         idHoraire.setCellValueFactory(new PropertyValueFactory<ShowHoraire, Integer>("idHoraire"));
         nomEtudiant.setCellValueFactory(new PropertyValueFactory<ShowHoraire, String>("nomEtud"));
         prenomEtudiant.setCellValueFactory(new PropertyValueFactory<ShowHoraire, String>("prenomEtud"));
@@ -236,6 +237,11 @@ public class AfficheHoraire implements Initializable {
             fileOut = new FileOutputStream("nouveauFichier.xlsx");
             wb.write(fileOut);
             fileOut.close();
+            /** Message d'alerte pour signaler que le fichier a été créé **/
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Export d'un fichier");
+            alert.setContentText("Les données ont bien été exportées !!");
+            alert.showAndWait();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

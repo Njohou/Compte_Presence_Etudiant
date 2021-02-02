@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="Compte_Presence_Etudiant:jar">
+  <artifact type="jar" build-on-make="true" name="Compte_Presence_Etudiant:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/Compte_Presence_Etudiant_jar</output-path>
     <root id="archive" name="Compte_Presence_Etudiant.jar">
       <element id="module-output" name="Compte_Presence_Etudiant" />

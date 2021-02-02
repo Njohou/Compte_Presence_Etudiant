@@ -16,6 +16,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
+/**
+ * Cette classe gère l'affichage de tous les cours crées
+ *
+ * @author Steve
+ */
 public class ListCours implements Initializable {
 
     @FXML

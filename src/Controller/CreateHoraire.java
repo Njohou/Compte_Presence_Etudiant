@@ -28,6 +28,11 @@ import java.time.LocalDate;
 import java.util.Date;
 import java.util.ResourceBundle;
 
+/**
+ * Cette classe gère la création des horaires
+ *
+ * @author Steve
+ */
 public class CreateHoraire implements Initializable {
 
     public int nbreID_cours = 0;

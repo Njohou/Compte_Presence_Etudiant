@@ -1,7 +1,6 @@
 package Controller;
 
 import Connexion.Dbconnector;
-import Model.ShowCours;
 import Model.ShowHoraire;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,7 +15,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.Row;
@@ -30,11 +28,19 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+/**
+ * Cette classe gère l'ecran principal de notre application
+ *
+ *chargé de presenter l'etat des étudiants à chaque cours
+ * @author Steve
+ */
 public class AfficheHoraire implements Initializable {
-    /** Afficher la liste des semestres **/
+
+    /**
+     * Cette fonction est en charge d'afficher la liste des semestres crées
+     */
     @FXML
     public void GotoShowSemestre() throws IOException {
         Stage stage = new Stage();
@@ -46,6 +52,9 @@ public class AfficheHoraire implements Initializable {
         stage.show();
     }
 
+    /**
+     * Cette fonction est en charge d'afficher la liste des semestres crées
+     */
     @FXML
     public void GotoCreateSemestre() throws IOException {
         Stage stage = new Stage();
@@ -57,11 +66,9 @@ public class AfficheHoraire implements Initializable {
         stage.show();
     }
 
-    @FXML
-    public void GotoModifyandDeleteSemestre() throws IOException {
-
-    }
-
+    /**
+     * Cette fonction est en charge d'afficher la liste des cours crées
+     */
     @FXML
     public void GotoShowCours() throws IOException {
         Stage stage = new Stage();
@@ -73,6 +80,9 @@ public class AfficheHoraire implements Initializable {
         stage.show();
     }
 
+    /**
+     * Cette fonction est en charge d'afficher l'interface de création des cours
+     */
     @FXML
     public void GotoCreateCours() throws IOException {
         Stage stage = new Stage();
@@ -84,11 +94,9 @@ public class AfficheHoraire implements Initializable {
         stage.show();
     }
 
-    @FXML
-    public void GotoModifyandDeleteCours() throws IOException {
-
-    }
-    /** Afficher la liste des éltudiants **/
+    /**
+     * Cette fonction est en charge d'afficher la liste des étudiants crées
+     */
     @FXML
     public void GotoShowEtudiant() throws IOException {
         Stage stage = new Stage();
@@ -99,7 +107,10 @@ public class AfficheHoraire implements Initializable {
         stage.setTitle("Liste des étudiants");
         stage.show();
     }
-    /** Afficher la création des étudiants **/
+
+    /**
+     * Cette fonction est en charge d'afficher l'interface de création des étudiants
+     */
     @FXML
     public void GotoCreateEtudiant() throws IOException {
         Stage stage = new Stage();
@@ -111,11 +122,9 @@ public class AfficheHoraire implements Initializable {
         stage.show();
     }
 
-    @FXML
-    public void GotoModifyandDeleteEtudiant() throws IOException {
-
-    }
-
+    /**
+     * Cette fonction est en charge d'assigner(present, absent, retard) un état à un étudiant specifique
+     */
     @FXML
     public void OpenCreateMethod(ActionEvent event) throws IOException {
         try {
@@ -133,12 +142,14 @@ public class AfficheHoraire implements Initializable {
 
     }
 
+    /**
+     * Cette fonction est en charge d'initialiser le tableau d'état des étudiants
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Affichage();
     }
 
-    /** Affichage des éléments d'un état **/
     @FXML
     private TableView<ShowHoraire> tableHoraire;
     @FXML private TableColumn<ShowHoraire, Integer> idHoraire;
@@ -152,6 +163,10 @@ public class AfficheHoraire implements Initializable {
 
     public ObservableList<ShowHoraire> ListHoraire = FXCollections.observableArrayList();
 
+    /**
+     * Cette fonction est en charge de recuperer les donner dans la base de donnée
+     * Et de les afficher dans le table View
+     */
     public void Affichage() {
         PreparedStatement stat = null;
         ResultSet rs = null;
@@ -184,13 +199,16 @@ public class AfficheHoraire implements Initializable {
         tableHoraire.setItems(ListHoraire);
     }
 
+    /**
+     * Cette fonction est en charge d'appeller notre fonction en charge d'exporter nos données
+     */
     @FXML public void exportData() {
-        // Object[] my_list = ListHoraire.toArray();
-        // System.out.println(ListHoraire.get(0).getNomEtud());
-        // System.out.println(ListHoraire.size());
         test(ListHoraire);
     }
 
+    /**
+     * Cette fonction est en charge d'exporter tous les données d'une table view vers notre fichier excel
+     */
     public static void test(ObservableList<ShowHoraire> myList) {
         //1. Créer un Document vide
         XSSFWorkbook wb = new XSSFWorkbook();

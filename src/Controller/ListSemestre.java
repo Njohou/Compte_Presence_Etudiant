@@ -16,6 +16,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
+/**
+ * Cette classe gère l'affichage de tous les semestres crées
+ *
+ * @author Steve
+ */
 public class ListSemestre implements Initializable {
     @FXML
     private TableView<Semestre> tableSemestre;

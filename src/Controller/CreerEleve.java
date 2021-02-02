@@ -14,6 +14,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * Cette classe gère la création de nouveaux étudiants
+ *
+ * @author Steve
+ */
 public class CreerEleve implements Initializable {
 
     /** Recupèrer les données entrées sur l'interface **/

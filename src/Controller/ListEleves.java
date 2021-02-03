@@ -16,6 +16,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
+/**
+ * Cette classe gère l'affichage de tous les élèves enregistrés
+ *
+ * @author Steve
+ */
 public class ListEleves implements Initializable {
 
     @FXML private TableView<Etudiant> tableEtud;

@@ -20,6 +20,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
+/**
+ * Cette classe gère la création de nouveaux cours
+ *
+ * @author Steve
+ */
 public class CreateCours implements Initializable {
 
     private int nbre_id = 0;

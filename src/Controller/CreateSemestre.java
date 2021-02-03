@@ -17,6 +17,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * Cette classe gère la création de semestres
+ *
+ * @author Steve
+ */
 public class CreateSemestre implements Initializable {
 
     @FXML private TextField anneeSemestre;

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: sample.Main
+Class-Path: /home/christophe/IdeaProjects/Compte_Presence_Etudiant/sampl
+ e/
+

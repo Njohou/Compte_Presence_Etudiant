@@ -15,8 +15,8 @@ public class Dbconnector {
         try {
             connection = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/controle-horaire",
-                    "root",
-                    ""
+                    "admin",
+                    "root"
             );
         }catch (SQLException e) {
             e.printStackTrace();

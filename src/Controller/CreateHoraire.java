@@ -90,7 +90,7 @@ public class CreateHoraire implements Initializable {
         /** permet d'afficher la page d'accueil actualisée **/
         ((Node)event.getSource()).getScene().getWindow().hide();
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../View/HomeHoraire.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View/HomeHoraire.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Accueil");
@@ -104,7 +104,7 @@ public class CreateHoraire implements Initializable {
 
         Stage stage1 = new Stage();
         ((Node)event.getSource()).getScene().getWindow().hide();
-        Parent root = FXMLLoader.load(getClass().getResource("../View/HomeHoraire.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View/HomeHoraire.fxml"));
         Scene scene = new Scene(root);
         stage1.setScene(scene);
         stage1.setTitle("Accueil");

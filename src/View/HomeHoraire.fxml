@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="547.0" maxWidth="1198.0" minHeight="547.0" minWidth="939.0" prefHeight="547.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficheHoraire">
+<AnchorPane maxHeight="547.0" maxWidth="1198.0" minHeight="547.0" minWidth="939.0" prefHeight="547.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficheHoraire">
    <children>
       <MenuBar layoutY="-2.0" prefHeight="29.0" prefWidth="1198.0">
         <menus>
@@ -16,21 +16,18 @@
             <items>
               <MenuItem mnemonicParsing="false" onAction="#GotoShowSemestre" text="Afficher semestre" />
                   <MenuItem mnemonicParsing="false" onAction="#GotoCreateSemestre" text="Créer semestre" />
-                  <MenuItem mnemonicParsing="false" onAction="#GotoModifyandDeleteSemestre" text="Modifier ou supprimer semestre" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Cours">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#GotoShowCours" text="Afficher cours" />
                   <MenuItem mnemonicParsing="false" onAction="#GotoCreateCours" text="Créer cours" />
-                  <MenuItem mnemonicParsing="false" onAction="#GotoModifyandDeleteCours" text="Modifier ou supprimer cours" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Etudiant">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#GotoShowEtudiant" text="Afficher étudiant" />
                   <MenuItem mnemonicParsing="false" onAction="#GotoCreateEtudiant" text="Créer étudiant" />
-                  <MenuItem mnemonicParsing="false" onAction="#GotoModifyandDeleteEtudiant" text="Modifier ou supprimer étudiant" />
             </items>
           </Menu>
         </menus>

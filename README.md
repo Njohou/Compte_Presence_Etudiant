@@ -1,5 +1,5 @@
 # Compte_Presence_Etudiant
-Projet JAVAFX, pour voir si un étudiant est présent, absent ou en retard à un cours.
+Projet JAVAFX, pour voir si un étudiant est présent, absent ou en retard à un cours durant un semestre donné, d'une année donnée.
 
 Nous avons la création des semestres, des cours, des étudiants et enfin des états (en retard, absent(e), présent(e)).
 
